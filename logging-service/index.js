@@ -35,6 +35,6 @@ app.post("/api/logs", async (request, response) => {
   response.status(statusCode).send(body);
 });
 
-app.listen(process.env.PORT, () =>
+app.listen(process.env.PORT || 3004, () =>
   console.log(`listening on port ${process.env.PORT}`),
 );

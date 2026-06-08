@@ -52,6 +52,6 @@ app.delete("/api/residents/:id", async (request, response) => {
   response.status(statusCode).send(body);
 });
 
-app.listen(process.env.PORT, () =>
+app.listen(process.env.PORT || 3002, () =>
   console.log(`listening on port ${process.env.PORT}`),
 );

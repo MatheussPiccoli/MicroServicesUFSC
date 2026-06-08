@@ -3,7 +3,7 @@ import express from "express";
 import entregasRouter from "./src/routes/entregas.js";
 
 const app = express();
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 3002;
 
 app.use(express.json());
 
